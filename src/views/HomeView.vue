@@ -2,6 +2,7 @@
   <div>
     <a-row>
       <a-col :span="12">
+        <a-card :bordered="false">
          <a-form :form="form" layout="horizontal" @submit="handleSubmit">
             <a-row>
               <a-form-item 
@@ -58,6 +59,7 @@
               </a-button>
             </a-form-item>
           </a-form>
+        </a-card>
       </a-col>
       <a-col :span="12" style="background: #ff0000; height: 50px">
       </a-col>
