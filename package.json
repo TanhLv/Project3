@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.6.5",
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "eslint": "^8.44.0",
     "eslint-plugin-vue": "^9.15.1",

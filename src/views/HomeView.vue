@@ -1,34 +1,67 @@
 <template>
   <div>
-    <div class=" ticket">
-      <div class="ticket__layout">
-        <div class="layout__left">
-          <div class="form">
-            <a-form :form="form" layout="inline" @submit="handleSubmit">
-              <a-form-item label="From">
-                <a-input v-decorator="['note', { rules: [{ required: true, message: 'Please input your from!' }] }]"
-                  placeholder="Input from" />
+    <a-row>
+      <a-col :span="12">
+         <a-form :form="form" layout="horizontal" @submit="handleSubmit">
+            <a-row>
+              <a-form-item 
+                label="From" 
+                :label-col="{ span: 4 }"
+                :wrapper-col="{ span: 14 }"
+              >
+                <a-select
+                  style="width: 200px"
+                  placeholder="Enter from"
+                >
+                  <a-select-option value="abc">abc</a-select-option>
+                </a-select>
               </a-form-item>
-              <a-form-item label="To">
-                <a-input v-decorator="['note', { rules: [{ required: true, message: 'Please input your yo!' }] }]"
-                  placeholder="Input to" />
+            </a-row>
+            <a-row>
+              <a-form-item label="To" :label-col="{ span: 4 }"
+                :wrapper-col="{ span: 14 }">
+                <a-select
+                  style="width: 200px"
+                  placeholder="Enter to"
+                >
+
+                </a-select>
               </a-form-item>
-              <a-form-item>
+            </a-row>
+            <a-row>
+              <a-form-item :label-col="{ span: 4 }"
+                :wrapper-col="{ span: 14 }" label="Ticket type">
                 <a-radio-group :options="plainOptions" @change="onChange1" />
               </a-form-item>
-              <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
-                <a-button type="primary" html-type="submit">
-                  Submit
-                </a-button>
-              </a-form-item>
-            </a-form>
-          </div>
-        </div>
-        <div class="layout__right">
-          chữ tự do
-        </div>
-      </div>
-    </div>
+            </a-row>
+            <a-row :gutter="[16, 16]">
+              <a-col :span="12">
+                <a-form-item label="Start date">
+                  <a-date-picker format="DD/MM/YYYY" style="width: 100%" />
+                </a-form-item>
+                <a-form-item label="Start time">
+                  <a-time-picker style="width: 100%" />
+                </a-form-item>
+              </a-col>
+              <a-col :span="12">
+                <a-form-item label="End date">
+                  <a-date-picker format="DD/MM/YYYY" style="width: 100%" />
+                </a-form-item>
+                <a-form-item label="End time">
+                  <a-time-picker style="width: 100%" />
+                </a-form-item>
+              </a-col>
+            </a-row>
+            <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
+              <a-button type="primary" html-type="submit">
+                Submit
+              </a-button>
+            </a-form-item>
+          </a-form>
+      </a-col>
+      <a-col :span="12" style="background: #ff0000; height: 50px">
+      </a-col>
+    </a-row>
   </div>
 </template>
 
