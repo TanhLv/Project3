@@ -6,7 +6,7 @@
     <a-row class="background-image">
       <a-col :span="12">
         <a-form :form="form" layout="horizontal" @submit="handleSubmit"
-          style="background-color: rgba(206, 190, 15, 0.184);">
+          style="background-color: rgba(206, 190, 15, 0.116);">
           <a-row>
             <a-form-item class="from" label="From" :label-col="{ span: 4 }" :wrapper-col="{ span: 14 }">
               <a-select style="width: 200px" placeholder="Enter from">
@@ -87,7 +87,7 @@
       </div>
     </a-row>
 
-    <a-row style="margin-top: 7%;">
+    <a-row style="margin-top: 7%; background-color: #f7f3f3ea;">
       <a-col :span="12">
         <div style="margin-left: 15%;">
           <p style="font-family:'fontslab'; 
@@ -101,25 +101,25 @@
           </p>
           <div class="row__col">
             <div class="cell">
-              <img style="font-size: 2%; width: 100%; padding: " src="../assets/images/logo1.png" alt="">
+              <img style="font-size: 2%; width: 100%; padding: 10px; margin-top: 12%; " src="../assets/images/logo1.png"
+                alt="">
             </div>
             <div class="cell">
-              <img style="font-size: 2%; width: 100%; padding: " src="../assets/images/logo2.png" alt="">
+              <img style="width: 100%; padding: 10px " src="../assets/images/logo2.png" alt="">
             </div>
             <div class="cell">
-              <img style="font-size: 2%; width: 100%;" src="../assets/images/logo3.jpg" alt="">
+              <img style="font-size: 100px; width: 100%; margin-top: 10%;" src="../assets/images/logo3.1.png" alt="">
             </div>
-            <div class="cell">Column 4, Row 1</div>
-            <div class="cell">Column 5, Row 1</div>
-            <div class="cell">Column 6, Row 1</div>
           </div>
           <div class="row__col">
-            <div class="cell">Column 1, Row 2</div>
-            <div class="cell">Column 2, Row 2</div>
-            <div class="cell">Column 3, Row 2</div>
-            <div class="cell">Column 4, Row 2</div>
-            <div class="cell">Column 5, Row 2</div>
-            <div class="cell">Column 6, Row 2</div>
+            <div class="cell">
+              <img style="font-size: 2%; width: 100%; padding: 10px " src="../assets/images/logo4.png" alt="">
+            </div>
+            <div class="cell">
+              <img style="font-size: 2%; width: 100%; padding: 10px " src="../assets/images/logo5.png" alt="">
+            </div>
+            <div class="cell"> <img style="font-size: 2%; width: 100%; padding: 10px " src="../assets/images/logo6.png"
+                alt=""></div>
           </div>
         </div>
       </a-col>
@@ -243,8 +243,11 @@ div.from label {
 .cell {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
+  margin-right: 15%;
+  margin-top: 2%;
+
 }
 
 .background-image {
