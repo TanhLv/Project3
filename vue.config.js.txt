@@ -1,0 +1,34 @@
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true,
+  chainWebpack: config => {
+    const imagesRule = config.module.rule('images');
+    imagesRule.uses.clear();
+    imagesRule
+      .use('url-loader')
+      .loader('url-loader')
+      .tap(options => {
+        if (options && options.fallback) {
+          return Object.assign(options, {
+            limit: 10240,
+            fallback: {
+              loader: 'file-loader',
+              options: {
+                name: 'img/[name].[ext]'
+              }
+            }
+          });
+        }
+        return options;
+      });
+  },
+  // css: {
+  //   loaderOptions: {
+     
+  //     css: {
+  //       // đường dẫn đến file css của bạn
+  //       import: "src/assets/styles/font.css"
+  //     }
+  //   }
+  // }
+})

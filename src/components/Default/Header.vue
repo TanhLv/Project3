@@ -2,7 +2,7 @@
     <div>
         <a-page-header style="border: 1px solid rgb(235, 237, 240)">
             <template #title>
-                <img src="../../../public/images/trainline-mint.svg">
+                <img src="../../assets/images/trainline-mint.svg">
             </template>
             <template #extra>
                 <a-button type="link" :size="size" @click="redirect('cart')">Cart</a-button>
