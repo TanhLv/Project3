@@ -129,6 +129,44 @@
         </div>
       </a-col>
     </a-row>
+
+    <a-row style="">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <router-link to="/haiphong">
+              <p>Hải Phòng</p>
+            </router-link>
+
+          </div>
+          <div class="col">
+            <router-link to="/">Link 2</router-link>
+            <p>Chú thích 2</p>
+          </div>
+          <div class="col">
+            <router-link to="/">Link 3</router-link>
+            <p>Chú thích 3</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <router-link to="/">Link 4</router-link>
+            <p>Chú thích 4</p>
+          </div>
+          <div class="col">
+            <router-link to="/">Link 5</router-link>
+            <p>Chú thích 5</p>
+          </div>
+          <div class="col">
+            <router-link to="/danang">
+              <p>Ga Đà Nẵng</p>
+            </router-link>
+
+          </div>
+        </div>
+      </div>
+
+    </a-row>
   </div>
 </template>
 
@@ -248,6 +286,38 @@ div.from label {
   margin-right: 15%;
   margin-top: 2%;
 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: 16px;
 }
 
 .background-image {
