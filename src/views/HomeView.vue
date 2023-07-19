@@ -9,8 +9,8 @@
           style="background-color: rgba(206, 190, 15, 0.116);">
           <a-row>
             <a-form-item class="from" label="From" :label-col="{ span: 4 }" :wrapper-col="{ span: 14 }">
-              <a-select style="width: 200px" placeholder="Enter from">
-                <a-select-option value="abc">abc</a-select-option>
+              <a-select style="width: 200px" placeholder="Enter from" v-model="selectedOption">
+                <a-select-option v-for="option in toOptions" :key="option" :value="option">{{ option }}</a-select-option>
               </a-select>
             </a-form-item>
           </a-row>
@@ -31,18 +31,20 @@
               <a-form-item class="from" label="Start date">
                 <a-date-picker format="DD/MM/YYYY" style="width: 100%" />
               </a-form-item>
+            </a-col>
+            <a-col :span="12">
               <a-form-item class="from" label="Start time">
                 <a-time-picker style="width: 100%" />
               </a-form-item>
             </a-col>
-            <a-col :span="12">
+            <!-- <a-col :span="12">
               <a-form-item class="from" label="End date">
                 <a-date-picker format="DD/MM/YYYY" style="width: 100%" />
               </a-form-item>
               <a-form-item class="from" label="End time">
                 <a-time-picker style="width: 100%" />
               </a-form-item>
-            </a-col>
+            </a-col> -->
           </a-row>
           <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
             <a-button type="primary" html-type="submit">
@@ -267,6 +269,7 @@
 
 <script>
 const plainOptions = ['Oneway', 'Return'];
+// const toOptions = ['Hà Nội', 'Đà Nẵng', 'HCM'];
 export default {
   name: "HomeView",
   components: {
@@ -275,7 +278,10 @@ export default {
   data() {
     return {
       form: this.$form.createForm(this, { name: 'coordinated' }),
-      plainOptions
+      plainOptions,
+      // toOptions,
+      // selectedOption: null
+
     }
   },
 
