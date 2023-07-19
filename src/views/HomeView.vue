@@ -87,7 +87,7 @@
       </div>
     </a-row>
 
-    <a-row style="margin-top: 7%; background-color: #f7f3f3ea;">
+    <a-row style="margin-top: 5%; background-color: #ebe8e8ea;">
       <a-col :span="12">
         <div style="margin-left: 15%;">
           <p style="font-family:'fontslab'; 
@@ -130,12 +130,53 @@
       </a-col>
     </a-row>
 
-    <a-row style="">
-      <div class="container">
+    <a-row style="margin-top: 10%; margin-left: 8%; margin-right: 0%; ">
+      <div class="row">
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/HaiPhong.jpg">
+            <p style="font-size: 30px; color: black;">Hải Phòng City</p>
+          </router-link>
+        </div>
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/HaGiang.jpg">
+            <p style="font-size: 30px; color: black;">Lạng Sơn</p>
+          </router-link>
+        </div>
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/binhthuan.jpg">
+            <p style="font-size: 30px; color: black;">Bình Thuận</p>
+          </router-link>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/Hue.jpg">
+            <p style="font-size: 30px; color: black;">Huế</p>
+          </router-link>
+        </div>
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/Danang.jpg">
+            <p style="font-size: 30px; color: black;">Đà Nẵng City</p>
+          </router-link>
+        </div>
+        <div class="column">
+          <router-link to="/haiphong">
+            <img src="../assets/images/HCM.jpg">
+            <p style="font-size: 30px; color: black;">Hồ Chí Minh City</p>
+          </router-link>
+        </div>
+      </div>
+      <!-- <div class="container">
         <div class="row">
           <div class="col">
-            <router-link to="/haiphong">
-              <p>Hải Phòng</p>
+            <router-link style="font-size: 25px;" to="/haiphong">
+              <img src="../assets/images/HaiPhong.jpg" alt="">
+              <p>Ga Hải Phòng</p>
             </router-link>
 
           </div>
@@ -164,8 +205,62 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
 
+    </a-row>
+
+    <a-row style="background-color: #ebe8e8ea; margin-top: 1%;">
+      <div class="content" style="height: 30%;">
+        <div class="main__content1" style="margin-left: 10%; margin-right: 10%; display: flex;">
+          <div class="item" style="flex: 1;">
+            <div class="icon"><a-icon type="heart" theme="filled" /></div>
+            <p style="display: center; justify-content: center; text-align: center; font-style: italic;">"Fourfold-T
+              take-off has been
+              vertical. It’s the only global digital travel
+              platform
+              of its sort."</p>
+          </div>
+          <div class="item" style="flex: 1;">
+            <div class="icon"><a-icon type="team" /></div>
+            <p style="display: center; justify-content: center; text-align: center; font-style: italic;">"For those
+              travelling by train, the
+              most efficient and trustworthy way to purchase
+              tickets is Fourfold-T."</p>
+          </div>
+          <div class="item" style="flex: 1;">
+            <div class="icon"><a-icon type="message" /></div>
+            <p style="display: center; justify-content: center; text-align: center; font-style: italic;">"If you’re
+              thinking of getting the
+              train the best site to use is Fourfold-T.com."
+            </p>
+          </div>
+        </div>
+      </div>
+    </a-row>
+
+    <a-row>
+      <div class="row"
+        style="margin-top: 8%; background-color: rgba(218, 241, 218, 0.445);  display: flex; flex-direction: row;">
+        <div class="col-1" style="flex: 1;">
+          <!-- Nội dunimg của cột 1 -->
+          <img src="../assets/images/Luuy.jpg" alt="">
+        </div>
+        <div class="col-2" style="flex: 2; ">
+          <!-- Nội dung của cột 2 -->
+          <div style="
+           height: auto; 
+           margin-top: 18%; 
+           font-size: 30px; 
+           margin-right: 10%;  
+           margin-left: 10%; 
+           font-family: Anton-Regular; 
+          font-style: italic;
+          font-weight: 200; color: rgb(49, 46, 41);">
+            <p>Thank you for using our service.</p>
+            <p>Keep your memories and beautiful photos</p>
+          </div>
+        </div>
+      </div>
     </a-row>
   </div>
 </template>
@@ -298,6 +393,39 @@ div.from label {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+
+}
+
+.column:nth-child(3) {
+  margin-left: 0%;
+}
+
+.column img {
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+.main__content1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20%;
+}
+
+.item {
+  flex-basis: 30%;
+  margin: 0 15px;
+}
+
+/* .row {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -312,17 +440,28 @@ div.from label {
   width: 300px;
   height: 300px;
   background-color: lightgray;
-  margin: 10px;
+  margin: 20px;
+  margin-top: 7%;
   border-radius: 8px;
 }
 
 .caption {
   font-size: 16px;
-}
+} */
 
 .background-image {
   background-image: url('../assets/images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   /* Các thuộc tính CSS khác cho hình nền */
+}
+
+.background-image1 {
+  background-image: url('../assets/images/nhang.jpg');
+  /* background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
 }
 
 /* .background-image1 {
