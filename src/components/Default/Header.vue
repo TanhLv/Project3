@@ -6,7 +6,7 @@
             </template>
             <template #extra>
                 <a-button type="link" :size="size" @click="redirect('cart')">Cart</a-button>
-                <a-button type="link" :size="size" @click="redirect('my')">My booking</a-button>
+                <a-button type="link" :size="size" @click="redirect('MyBooking')">My booking</a-button>
                 <a-button type="link" :size="size">Register</a-button>
                 <a-button type="primary" ghost icon="user" @click="handleSignIn" :size="size">
                     Sign in
