@@ -2,6 +2,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Danang from '../views/Danang.vue'
 import HaiPhong from '../views/HaiPhong.vue'
+import MyBooking from '../views/MyBooking.vue';
 const router = new VueRouter({
   routes: [
     {
@@ -29,6 +30,11 @@ const router = new VueRouter({
       path: '/haiphong',
       name: 'haiphong',
       component: HaiPhong
+    },
+    {
+      path: '/mybooking',
+      name: 'MyBooking',
+      component: MyBooking
     }
   ]
 })

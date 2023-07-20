@@ -6,8 +6,13 @@
             </template>
             <template #extra>
                 <a-button type="link" :size="size" @click="redirect('cart')">Cart</a-button>
+<<<<<<< HEAD
                 <a-button type="link" :size="size" @click="redirect('my')">My booking</a-button>
                 <a-button type="link" :size="size" @click="showRegisterForm = true">Register</a-button>
+=======
+                <a-button type="link" :size="size" @click="redirect('MyBooking')">My booking</a-button>
+                <a-button type="link" :size="size">Register</a-button>
+>>>>>>> 747676cd22ed4300c4f24ac12969d9bba5ebd58d
                 <a-button type="primary" ghost icon="user" @click="handleSignIn" :size="size">
                     Sign in
                 </a-button>
