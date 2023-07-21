@@ -1,6 +1,8 @@
 <template>
   <div>
+    <footer id="footer" style="background-color: black; height: 250px; margin-top: 5%;">
 
+    </footer>
   </div>
 </template>
 

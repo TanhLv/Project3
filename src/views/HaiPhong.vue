@@ -99,7 +99,7 @@
         </div>
         <div style="background-color: #0fae8d; height: 250px;">
           <div id="main__3" style="display: flex;">
-            <div id="main__2--background" style="flex: 1;background-size: cover;
+            <div id="main__bmq" style="flex: 1;background-size: cover;
               background-position: center center;
               background-repeat: no-repeat;">
 
@@ -112,9 +112,9 @@
                 font-size: 18px;
                 margin-left: 2%;
                 margin-right: 2%;
-                color: #656362">
-                experience attractive tourist destinations. Beautiful enchanting and release soul into nature. Let's
-                experience the service here
+                color: #f7fbbe">
+                Referring to Hai Phong cuisine, it is impossible to mention bread sticks. We recommend you to try it when
+                you come here
               </div>
             </div>
           </div>
@@ -196,5 +196,9 @@ export default {
 
 #background_bdc {
   background-image: url('../assets/images/banhdacua.jpg');
+}
+
+#main__bmq {
+  background-image: url('../assets/images/banhmyque.jpg');
 }
 </style>

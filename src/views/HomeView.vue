@@ -141,13 +141,13 @@
           </router-link>
         </div>
         <div class="column">
-          <router-link to="/haiphong">
+          <router-link to="/langson">
             <img src="../assets/images/HaGiang.jpg">
             <p style="font-size: 30px; color: black;">Lạng Sơn</p>
           </router-link>
         </div>
         <div class="column">
-          <router-link to="/haiphong">
+          <router-link to="/binhthuan">
             <img src="../assets/images/binhthuan.jpg">
             <p style="font-size: 30px; color: black;">Bình Thuận</p>
           </router-link>
@@ -155,19 +155,19 @@
       </div>
       <div class="row">
         <div class="column">
-          <router-link to="/haiphong">
+          <router-link to="/hue">
             <img src="../assets/images/Hue.jpg">
             <p style="font-size: 30px; color: black;">Huế</p>
           </router-link>
         </div>
         <div class="column">
-          <router-link to="/haiphong">
+          <router-link to="/danang">
             <img src="../assets/images/Danang.jpg">
             <p style="font-size: 30px; color: black;">Đà Nẵng City</p>
           </router-link>
         </div>
         <div class="column">
-          <router-link to="/haiphong">
+          <router-link to="/hcm">
             <img src="../assets/images/HCM.jpg">
             <p style="font-size: 30px; color: black;">Hồ Chí Minh City</p>
           </router-link>
