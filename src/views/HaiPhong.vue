@@ -65,42 +65,41 @@
       </div>
     </a-row>
 
-    <a-row>
-      <div id="main1">
+
+
+    <a-row style="margin-top: 15%;">
+      <div id="main">
         <div style="background-color: #0fae8d; height: 250px;">
           <div id="main__2" style="display: flex;">
+            <div id="background_bdc" style=" flex: 2; height: 250px; 
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;">
+            </div>
             <div style="flex: 1; ">
-              <div id="content__main" style=" height: 150px;">
-                <div id="main__1"
-                  style="font-size: 30px; display: flex; justify-content: center; text-align: center; color: #656362; ">
-                  The
-                  port city of
-                  Vietnam
-                </div>
-                <div style="display: flex; justify-content: center; text-align: center; font-size: 20px; color: #0fae8d;">
-                  ____
-                </div>
-                <div
-                  style="margin-top: 5%; display: flex; justify-content: center; text-align: center; font-size: 15px; color: #656362; ">
-                  Hai Phong people live with quality, Hai Phong does not go around
-                </div>
-              </div>
               <div
                 style="display: flex; justify-content: center; text-align: center; margin-top: 25%; font-size: 25px; color:#f7fbbe;">
                 Red Phoenix flower <br> City
               </div>
             </div>
-            <div id="main__2--background" style=" flex: 2; height: 250px; 
-              background-size: cover;
-              background-position: center center;
-              background-repeat: no-repeat;">
-
-            </div>
           </div>
         </div>
-        <div style="background-color: beige; height: 250px;">
+        <div id="content__main" style=" height: 150px;">
+          <div id="main__1"
+            style="font-size: 30px; display: flex; justify-content: center; text-align: center; color: #656362; ">The
+            Hai Phong city of food
+          </div>
+          <div style="display: flex; justify-content: center; text-align: center; font-size: 20px; color: #0fae8d;">
+            ____
+          </div>
+          <div
+            style="margin-top: 5%; display: flex; justify-content: center; text-align: center; font-size: 15px; color: #656362; ">
+            Hai Phong, where there are culinary fish, attracts visitors when coming to experience
+          </div>
+        </div>
+        <div style="background-color: #0fae8d; height: 250px;">
           <div id="main__3" style="display: flex;">
-            <div id="main__3--background" style="flex: 1;background-size: cover;
+            <div id="main__2--background" style="flex: 1;background-size: cover;
               background-position: center center;
               background-repeat: no-repeat;">
 
@@ -193,5 +192,9 @@ export default {
 
 #main__3--background {
   background-image: url('../assets/images/catba.jpg');
+}
+
+#background_bdc {
+  background-image: url('../assets/images/banhdacua.jpg');
 }
 </style>
