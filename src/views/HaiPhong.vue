@@ -9,16 +9,17 @@
 
     <a-row>
       <div id="main">
-        <div id="content__main" style="background-color: blueviolet; height: 150px;">
+        <div id="content__main" style=" height: 150px;">
           <div id="main__1"
-            style="font-size: 30px; display: flex; justify-content: center; text-align: center; color: antiquewhite; ">The
+            style="font-size: 30px; display: flex; justify-content: center; text-align: center; color: #656362; ">The
             port city of
             Vietnam
           </div>
-          <div style="display: flex; justify-content: center; text-align: center; font-size: 15px; color: yellow;"> ____
+          <div style="display: flex; justify-content: center; text-align: center; font-size: 20px; color: #0fae8d;">
+            ____
           </div>
           <div
-            style="margin-top: 5%; display: flex; justify-content: center; text-align: center; font-size: 15px; color: antiquewhite; ">
+            style="margin-top: 5%; display: flex; justify-content: center; text-align: center; font-size: 15px; color: #656362; ">
             Hai Phong people live with quality, Hai Phong does not go around
           </div>
         </div>
@@ -47,7 +48,72 @@
 
             </div>
             <div id="main__--background" style=" flex: 2; height: 250px;">
-              <div>
+              <div style="display: flex; 
+                justify-content: center; 
+                text-align: center;
+                margin-top: 15%;
+                font-size: 18px;
+                margin-left: 2%;
+                margin-right: 2%;
+                color: #656362">
+                experience attractive tourist destinations. Beautiful enchanting and release soul into nature. Let's
+                experience the service here
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a-row>
+
+    <a-row>
+      <div id="main1">
+        <div style="background-color: #0fae8d; height: 250px;">
+          <div id="main__2" style="display: flex;">
+            <div style="flex: 1; ">
+              <div id="content__main" style=" height: 150px;">
+                <div id="main__1"
+                  style="font-size: 30px; display: flex; justify-content: center; text-align: center; color: #656362; ">
+                  The
+                  port city of
+                  Vietnam
+                </div>
+                <div style="display: flex; justify-content: center; text-align: center; font-size: 20px; color: #0fae8d;">
+                  ____
+                </div>
+                <div
+                  style="margin-top: 5%; display: flex; justify-content: center; text-align: center; font-size: 15px; color: #656362; ">
+                  Hai Phong people live with quality, Hai Phong does not go around
+                </div>
+              </div>
+              <div
+                style="display: flex; justify-content: center; text-align: center; margin-top: 25%; font-size: 25px; color:#f7fbbe;">
+                Red Phoenix flower <br> City
+              </div>
+            </div>
+            <div id="main__2--background" style=" flex: 2; height: 250px; 
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;">
+
+            </div>
+          </div>
+        </div>
+        <div style="background-color: beige; height: 250px;">
+          <div id="main__3" style="display: flex;">
+            <div id="main__3--background" style="flex: 1;background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;">
+
+            </div>
+            <div id="main__--background" style=" flex: 2; height: 250px;">
+              <div style="display: flex; 
+                justify-content: center; 
+                text-align: center;
+                margin-top: 15%;
+                font-size: 18px;
+                margin-left: 2%;
+                margin-right: 2%;
+                color: #656362">
                 experience attractive tourist destinations. Beautiful enchanting and release soul into nature. Let's
                 experience the service here
               </div>
@@ -95,11 +161,22 @@ export default {
 }
 
 #main {
-  background-color: blue;
+  /* background-color: rgb(245, 211, 211); */
+  background-color: beige;
   margin: 0 auto;
   max-width: 960px;
   height: 650px;
   margin-top: -5%;
+}
+
+#main1 {
+  /* background-color: rgb(245, 211, 211); */
+  background-color: rgb(187, 187, 131);
+  margin: 0 auto;
+  max-width: 960px;
+  height: 250px;
+  margin-top: 8%;
+
 }
 
 #main__1 {

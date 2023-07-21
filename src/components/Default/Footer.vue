@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-footer>
+    <a-footer class="footer">
       <template>
         <!-- <a-footer class="footer">
           <a-row :gutter="16" justify="center">
@@ -22,8 +22,9 @@
             </a-col>
           </a-row>
         </a-footer> -->
-        <a-row
-          style="background-color:rgba(0, 0, 0, 0.767); height: auto; color: aliceblue; display: flex; margin-top: 5%;">
+        <!-- <a-row
+          style="background-color:rgba(0, 0, 0, 0.767); height: auto; color: aliceblue; display: flex; margin-top: 5%; margin-bottom: auto;"> -->
+        <a-row style="display: flex; height: auto;">
           <a-col :span="12" style=" font-size: 20px; margin-left: 3%; margin-top: 2%; font-family: fontslab; flex: 1;">
             <div>
               <img src="../../assets/images/trainline-mint.svg">
@@ -33,7 +34,7 @@
               <br>VAT number 686868****89
             </div>
           </a-col>
-          <a-col :span="12" style="flex: 1; margin-top: 2%;">
+          <a-col :span="12" style="flex: 1; margin-top: 2%; margin-left: 50%;">
             <div style="margin-top: 2px; font-size: 18px; font-weight: bold;">Conditions of use</div>
             <div style="margin-top: 2px; font-size: 18px; font-weight: bold;">Privacy notice</div>
             <div style="margin-top: 2px; font-size: 18px; font-weight: bold;">Cookie declaration</div>
@@ -65,4 +66,15 @@ export default {
   background-color: #000;
   color: #fff;
 } */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  height: auto;
+  color: aliceblue;
+  display: flex;
+  margin-top: 5%;
+  height: 250px;
+}
 </style>
