@@ -269,7 +269,7 @@
 
 <script>
 const plainOptions = ['Oneway', 'Return'];
-// const toOptions = ['Hà Nội', 'Đà Nẵng', 'HCM'];
+const toOptions = [''];
 export default {
   name: "HomeView",
   components: {
@@ -279,8 +279,8 @@ export default {
     return {
       form: this.$form.createForm(this, { name: 'coordinated' }),
       plainOptions,
-      // toOptions,
-      // selectedOption: null
+      toOptions,
+      selectedOption: null
 
     }
   },

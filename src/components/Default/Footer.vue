@@ -1,7 +1,9 @@
 <template>
   <div>
     <footer id="footer" style="background-color: black; height: 250px; margin-top: 5%;">
-
+      <div>
+        đây là footer
+      </div>
     </footer>
   </div>
 </template>
